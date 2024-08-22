@@ -24,7 +24,8 @@ with col2:
 # Initialize the webcam
 cap = cv2.VideoCapture(0)
 
-# Configure the API with your key   
+# Configure the API with your key 
+api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 # Initialize the GenerativeModel
